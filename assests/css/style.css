@@ -1,6 +1,7 @@
 :root {
     --primary-color: rgb(43, 71, 194);
     --secondary-color: rgb(255, 255, 255);
+    --tertiary-color: rgb(26, 43, 116);
 }
 * {
     margin: 0;
@@ -13,11 +14,11 @@ body {
 }
 /* Header Start */
 header{
-    padding: 20px 35px;
-    background-color: var(--primary-color);
+    padding: 10px 35px;
     color: var(--secondary-color);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
     position: sticky;
     top: 0;
@@ -29,7 +30,7 @@ header{
 }
 header h1 {
     color: var(--secondary-color);
-    font-size: 2vw;
+    font-size: 1.55vw;
     margin: 0;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
 }
@@ -51,6 +52,7 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
+    margin:0;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 /* Hover Effects ove Nav links */
@@ -73,8 +75,7 @@ header nav ul li a:hover{
     flex-wrap: wrap;
     align-items: center;
     padding: 5px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: var(--primary-color);
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .hero-info {
     display: flex;
@@ -87,12 +88,14 @@ header nav ul li a:hover{
     font-size: 50px;
     padding: 20px 10px;
     flex: 1 60%;
+    color:var(--tertiary-color);
 }
 .hero p{
     font-size:large;
     flex: 0 50%;
     padding: 5px;
     margin: 20px;
+    color: var(--primary-color);
 }
 .profile-pic {
     width: 200px;
@@ -101,4 +104,88 @@ header nav ul li a:hover{
     flex: 1 10%;
     padding: 20px 40px;
     margin: 20px;
+}
+/* Hero Style End */
+
+/*Section Title Style Start */
+.section-title {
+    font-size: 48px;
+    color: var(--tertiary-color);
+    padding: 10px;
+    text-align:center;
+    margin:0;
+    width:20%;
+    text-shadow: 0 0 5px rgba(0, 0, 0,.5);
+    border-right: 2px dotted var(--primary-color);
+}
+
+/* About Me Style Start */
+.my-aboutme {
+    background-color: azure;
+    padding:20px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.my-aboutme div{
+    width: 75%;
+    height: auto;
+    line-height: 1.7;
+    font-size:30px;
+    margin: 10px auto;
+    text-align:center;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+}
+.intro{
+    flex: 1 75%;
+    margin: 20px auto 20px auto;
+}
+/* My Work Style Begin */
+.my-work {
+    background-color:azure;
+    padding: 20px;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.my-work h3{
+    height:auto;
+}
+.examples{
+    display:flex;
+    flex-wrap: wrap;
+    width: 75%;
+}
+.lg-example{
+    width: 90%;
+    border-radius: 15px;
+}
+
+.other-examples img{
+    width: 40%;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+/* Contact Me Style Start */
+.my-contact {
+    background-color: azure;
+    padding:20px;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content: space-between;
+}
+li{
+    list-style: none;
+    font-size: 20px;
+    
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
 }
