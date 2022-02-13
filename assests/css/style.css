@@ -162,25 +162,37 @@ header nav ul li a:hover{
     width: 75%;
     justify-content: space-evenly;
 }
-.lg-example{
+.lg-example, .sm-example{
     position: relative;
     text-align: center;
 }
-.lg-example p{
+/* .sm-example{
+    position: relative;
+    text-align: center;
+} */
+.lg-example p, 
+.sm-example p{
     background-color: var(--tertiary-color);
     color: var(--secondary-color);
     padding: 0px 20px;
 }
+/* .sm-example p{
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    padding: 0px 20px;
+} */
 .bottom-left{
     position: absolute;
     bottom:8px;
     left:16px;
+    
 }
 .lg-example img{
     width: 100%;
     border-radius: 15px;
 }
-.my-work a:hover{
+.lg-example :hover, 
+.sm-example :hover{
     border: 10px solid var(--primary-color);
     padding: 20px;
 }
