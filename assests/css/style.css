@@ -166,21 +166,14 @@ header nav ul li a:hover{
     position: relative;
     text-align: center;
 }
-/* .sm-example{
-    position: relative;
-    text-align: center;
-} */
+
 .lg-example p, 
 .sm-example p{
     background-color: var(--tertiary-color);
     color: var(--secondary-color);
     padding: 0px 20px;
 }
-/* .sm-example p{
-    background-color: var(--tertiary-color);
-    color: var(--secondary-color);
-    padding: 0px 20px;
-} */
+
 .bottom-left{
     position: absolute;
     bottom:8px;
